@@ -4,8 +4,6 @@ This is a project to teach basic python coding through Blender, a free and open-
 * the basics of coding in Python
 * 3D visualization using a powerful computer science tool and computer graphics software. 
 
-This tutorial is currently written for macOS, but hopefully we'll be adapt this to Windows and other operating systems. 
-
 # downloads to get started
 ## Blender
 https://www.blender.org/download/
@@ -17,6 +15,15 @@ Anaconda is a package manager, environment manager and a Python distribution. It
 
 https://www.anaconda.com/products/individual
 
+# Blender basics
+
+# Python basics
+
+# Blender with Python basics
+Import bpy module 
+
+# Making our first graph
+
 # future projects
 * Visualize population pyramids over time 
-* 
+* Visualize population pyramids based on location on the map
