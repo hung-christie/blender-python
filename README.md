@@ -11,7 +11,8 @@ https://www.blender.org/download/
 Click on this link and download the most recent version (currently is Blender 2.90.1) and the version that is compatible with your operating system. It's free to download, use, and share.
 
 ## Python3
-In case you're unsure if you have Python downloaded, you can open the command line in Terminal on Mac and type `python3 --version` and press `enter`. If the version number comes up, then you should have Python3 downloaded. If a version number is not returned 
+In case you're unsure if you have Python downloaded, you can open the command line in Terminal on Mac and type `python3 --version` and press `enter`. If the version number comes up, then you should have Python3 downloaded. If a version number is not returned then it probably means that you don't have python installed. 
+
 Anaconda is a package manager, environment manager and a Python distribution. It helps manage commonly used data science libraries. I personally used this to download Python, but feel free to download Python3 however you want.
 
 https://www.anaconda.com/products/individual
