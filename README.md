@@ -18,6 +18,14 @@ Anaconda is a package manager, environment manager and a Python distribution. It
 https://www.anaconda.com/products/individual
 
 # Blender basics
+
+Hotkeys: 
+- G is for grab - to grab wherever your cursor is
+  - If you type G, then Z, then it will grab and when you move your cursor, will move throughout the Z axis. 
+- S is for scale - to scale whatever is selected
+- Shift D - copies and paste the cube somewhere else 
+- Shift A - whenever you want to add something 
+- "Perfection is the virtual perfection" - quote from YouTube tutorial 
 - Marlon's intro video? 
 
 # Python basics
