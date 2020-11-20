@@ -2,7 +2,7 @@
 This is a project to teach basic python coding through Blender, a free and open-source 3D computer graphics software that can create animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games. Whether you're a Blender expert or an avid Python coder (of which I was neither when I first started undertaking this project), hopefully at the end of this we'll be able to produce a simple, but useful visualization of population pyramids from different countries! The goal is to learn: 
 * the basics of Blender
 * the basics of coding in Python
-* 3D visualization using a powerful computer science tool and computer graphics software. 
+* 3D visualization using a powerful computer science tool and computer graphics software
 
 # downloads to get started
 ## Blender
