@@ -15,6 +15,7 @@ In case you're unsure if you have Python downloaded, you can open the command li
 
 ## Atom 
 Atom is a text editor which I used to write my script - you can download from this button. 
+
 https://atom.io/
 
 # Blender basics
@@ -63,7 +64,7 @@ The scripts can be found in this folder (it'll be easier to reference directly w
 - we will also have to write a shell script, that will run your python script inside Blender 
   - the script will call the Blender application, and then call the Python script that we just wrote with `--python` and then the location of the script in our directory
   - adding `echo` on the first line of the shell script is sort of like a sanity check to see that the shell script is being run in terminal 
-- to run the script, we first have to change the read requirements, type `chmod 755 launch_population.sh` inside the directory with the script using `Terminal`, where `launch_population.sh` is the name of the shell script that will run our python script 
+- to run the script, we first have to change the read requirements. To do this, type `chmod 755 launch_population.sh` inside the directory with the script using `Terminal`, where `launch_population.sh` is the name of the shell script that will run our python script 
 - then right after, we can launch the shell script with `./launch_population.sh` inside our Terminal. This will open up Blender with our population pyramid. 
 
 # some notes
