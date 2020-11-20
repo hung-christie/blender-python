@@ -39,6 +39,7 @@ Some useful hotkeys:
     - boolean_list = [True, False, True, False, True]
 - Loops are useful in python to help iterate over sequences or execurte a set of statements. For loops are particularly useful for iterating through a list. We can go through all the elements in a list and do an action. For example, if we were to iteration through our `string_list` we can print each element in the list by:
   - for i in string_list:
+      
       print(i)
 
 *Syntax*
