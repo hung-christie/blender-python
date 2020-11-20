@@ -13,7 +13,7 @@ Click on this link and download the most recent version (currently is Blender 2.
 ## Python3
 In case you're unsure if you have Python downloaded, you can open the command line in Terminal on Mac and type `python3 --version` and press `enter`. If the version number comes up, then you should have Python3 downloaded. If a version number is not returned then it probably means that you don't have python installed. 
 
-# Atom 
+## Atom 
 Atom is a text editor which I used to write my script - you can download from this button. 
 https://atom.io/
 
@@ -44,8 +44,8 @@ Import bpy module
 
 
 # making our first graph
+
 To make this 3D graph, we are just creating many blocks inside Blender and changing their sizes (lengths), as well as their locations based on the age group. Based on what we discussed about Python basics and Blender, here is how we will graph it with python: 
-- 
 
 ## to run this script in Blender, we also need to run this script through command line 
 - we will have a shell script, that will run your python script inside Blender 
