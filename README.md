@@ -37,10 +37,8 @@ Some useful hotkeys:
     - string_list = ['computer', 'phone', 'tv']
     - int_list = [1, 2, 3, 4, 5]
     - boolean_list = [True, False, True, False, True]
-- Loops are useful in python to help iterate over sequences or execurte a set of statements. For loops are particularly useful for iterating through a list. We can go through all the elements in a list and do an action. For example, if we were to iteration through our `string_list` we can print each element in the list by:
-  - for i in string_list:
-      
-      print(i)
+- Loops are useful in python to help iterate over sequences or execurte a set of statements. For loops are particularly useful for iterating through a list. We can go through all the elements in a list and do an action. For example, if we were to iterate through our `string_list` we can print each element in the list. 
+- To import a data file, such as a .csv file, we can use the `with open('_.csv') as f` function to open parse through the datafile. 
 
 *Syntax*
 - Line breaks conclude a statement (not a semicolon as in other languages)
@@ -49,17 +47,24 @@ Some useful hotkeys:
 - Make comments by initiating the statement with a (#)
 
 # Blender with Python basics
-Import bpy module 
-
+- Blender provides the `bpy` module to the python interpreter. To access blender data, classes, and functions, we will need to import the module with `import bpy` at the top of the script. 
+- To add a cube as discussed before, we can use the the bpy module to create a mesh object (in this case, a cube). The specific line is `bpy.ops.mesh.primitive_cube_add()`. To specify the size of the cube, `primitive_cube_add()`, takes in an argument called `size`. 
+- To get access to the cube in the 3D, we will just call the `bpy.context.active_object`. This will help us change the parameters of the cube cube, such as its location and scaling. 
+  - By calling `.location` on our cube, we can specify if we want to change the location on a specific axis. For example, `.location[0] = 10` will change the position of the cube on the x axis to position 10. 
+  - By calling `.scale` on our cube, we can specify how we can to transform the objects size. For example, `.scale = (1, 100, 1)` will scale the object by 100 times along the y axis, but it will remain the same along the x and z axes. 
 
 # making our first graph
-
-To make this 3D graph, we are just creating many blocks inside Blender and changing their sizes (lengths), as well as their locations based on the age group. Based on what we discussed about Python basics and Blender, here is how we will graph it with python: 
+The scripts can be found in this folder (it'll be easier to reference directly while looking at this). To make this 3D graph, we are just creating many blocks inside Blender and changing their sizes (lengths), as well as their locations based on the age group. This folder has two data files, the population numbers for both male and female for different age groups in `.csv` files for the USA and Japan. Based on what we discussed about Python basics and Blender, here is how we will graph it with python: 
+- intialize lists to store male and female population numbers for different age groups for different countries by assigning it to a variable to store datapoints
+- open each `.csv` file. We have a `US_2020.csv` and a `Japan_2019.csv`. We will parse through the data files to add to the lists we had initialized before hand. Parsing through the lists will require some cleaning, but at the end, we want a list with just population numbers, ordered by the age group from youngest to oldest. 
+- Then we can plot the population pyramids. To plot the US population pyramid, we will parse through the US female population first, adding a cube for each datapoint, putting the cube on a location in Blender based on the age group, and then scaling it based on the population size. We will use the `for` loops and `bpy` module to achieve this. We will then do the same for the US male population, but plotting it at a different location. This can also be repeated for the Japanese population, also just at a different location, which we can do by changing the location of the cubes. 
 
 ## to run this script in Blender, we also need to run this script through command line 
-- we will have a shell script, that will run your python script inside Blender 
-- to change the read requirements, type `chmod 755 launch_population.sh` inside the directory with the script, where `launch_population.sh` is the name of the shell script that will run our python script 
-- adding `echo` on the first line of the shell script is sort of like a sanity check to see that the shell script is being run in terminal 
+- we will also have to write a shell script, that will run your python script inside Blender 
+  - the script will call the Blender application, and then call the Python script that we just wrote with `--python` and then the location of the script in our directory
+  - adding `echo` on the first line of the shell script is sort of like a sanity check to see that the shell script is being run in terminal 
+- to run the script, we first have to change the read requirements, type `chmod 755 launch_population.sh` inside the directory with the script using `Terminal`, where `launch_population.sh` is the name of the shell script that will run our python script 
+- then right after, we can launch the shell script with `./launch_population.sh` inside our Terminal. This will open up Blender with our population pyramid. 
 
 # additions to this project
 * add color and labels 
