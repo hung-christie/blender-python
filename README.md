@@ -66,9 +66,12 @@ The scripts can be found in this folder (it'll be easier to reference directly w
 - to run the script, we first have to change the read requirements, type `chmod 755 launch_population.sh` inside the directory with the script using `Terminal`, where `launch_population.sh` is the name of the shell script that will run our python script 
 - then right after, we can launch the shell script with `./launch_population.sh` inside our Terminal. This will open up Blender with our population pyramid. 
 
-# additions to this project
-* add color and labels 
-* instead of using blocks, make it look like different shapes (each graph is its own donut, so that we can learn more about Blender's functionalities
+# some notes
+- my scripts that I added are specific to my directory on my machine, so you may have to edit locations when accessing data files, Blender, or the python script 
+
+# currently working on 
+* adding color and labels 
+* instead of using blocks, making it look like different shapes (each graph is its own donut, so that we can learn more about Blender's functionalities)
 
 # possible future projects
 * visualize population pyramids over time (possibly as a movie)
