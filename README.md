@@ -1,5 +1,5 @@
 # blender-python
-This is a project to teach basic python coding through Blender, a free and open-source 3D computer graphics software that can create animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games. Whether you're a Blender expert or an avid Python coder (of which I was neither when I first started undertaking this project), hopefully at the end of this we'll be able to produce a simple, but useful visualization of population pyramids from different countries! In the process, hopefully you'll be familiar with:
+This is a project to teach basic python coding through Blender, a free and open-source 3D computer graphics software that can create animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games. Whether you're a Blender expert or an avid Python coder (of which I was neither when I first started undertaking this project), hopefully at the end of this we'll be able to produce a simple, but useful visualization of population pyramids from different countries! The goal is to learn: 
 * the basics of Blender
 * the basics of coding in Python
 * 3D visualization using a powerful computer science tool and computer graphics software. 
@@ -20,7 +20,7 @@ https://atom.io/
 # Blender basics
 - When we first open Blender, we see that the scene already has a cube and other objects. In Blender's interface, to clear the scene, we can press `A`, which will select all the objects, then `X` and confirm by pressing `return`
 - Pressing `Shift` `A`, looking under `Mesh` and selecting `Cube` will create a cube object in the center of the scene
-- There are plenty of ways to experiment with this cube, but for the purposes of this graph, we can edit the scaling and
+- There are plenty of ways to experiment with this cube, but for the purposes of this graph, we can edit the scaling and location by looking the transform options under the Cube object. We can find this at the bottom right panel, click `Object Properties` (the orange square), and select `Transform`. From there, we can edit details about this cube such as location on the X, Y, or Z axes, as sell as how we want to scale in the X, Y or Z directions.  
 
 Some useful hotkeys: 
 - `G` is to grab whatever is under your cursor
@@ -31,7 +31,13 @@ Some useful hotkeys:
 - (maybe link or add more things from Marlon's intro video)
 
 # Python basics for this script
-
+- Lists are used to store multiple items in a single variable and are created using square brackets `[]` and assigning them to a variable name
+  - We can access list items by their indices, which start at 0 and end at the (length - 1)
+  - There are various data types in Python that lists can stores, including strings, ints, and boolean:
+    - string_list = ['computer', 'phone', 'tv']
+    - int_list = [1, 2, 3, 4, 5]
+    - boolean_list = [True, False, True, False, True]
+- Loops are useful in python to help iterate over sequences or execurte a set of statements. For loops are particularly useful for iterating through a list. We can go through all the elements in a list and 
 
 *Syntax*
 - Line breaks conclude a statement (not a semicolon as in other languages)
